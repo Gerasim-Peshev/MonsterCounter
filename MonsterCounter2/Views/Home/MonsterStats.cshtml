@@ -1,0 +1,128 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using MonsterCounter2.Data.Models;
+@inject SignInManager<MonsterFan> SignInManager
+@inject UserManager<MonsterFan> UserManager
+@{
+    ViewData["Tittle"] = "Monster Stats";
+    var userrr = UserManager.GetUserAsync(User).Result;
+}
+
+<div id="conta">
+    @{
+        for (int i = 1; i <= 21; i++)
+        {
+            <div id="monst">
+                @{
+                    switch (i)
+                    {
+                        case 1:
+                            <img src="https://i.ibb.co/LkwrzxP/1.png" />
+                            <h1>Classic Green</h1>
+                            <h2>@userrr.NormalGreen</h2>
+                            break;
+                        case 2:
+                            <img src="https://i.ibb.co/548tFMH/2.png" />
+                            <h1>Blue</h1>
+                            <h2>@userrr.NormalBlue</h2>
+                            break;
+                        case 3:
+                            <img src="https://i.ibb.co/cTztGZN/3.png" />
+                            <h1>The Doctor</h1>
+                            <h2>@userrr.TheDoctor</h2>
+                            break;
+                        case 4:
+                            <img src="https://i.ibb.co/THhgvbK/4.png" />
+                            <h1>Blue Hamilton</h1>
+                            <h2>@userrr.BlueHamilton</h2>
+                            break;
+                        case 5:
+                            <img src="https://i.ibb.co/Tc6XP9X/5.png" />
+                            <h1>No Sugar Green</h1>
+                            <h2>@userrr.NoSugarGreen</h2>
+                            break;
+                        case 6:
+                            <img src="https://i.ibb.co/BntqY7V/6.png" />
+                            <h1>No Sugar Mango</h1>
+                            <h2>@userrr.NoSugarMango</h2>
+                            break;
+                        case 7:
+                            <img src="https://i.ibb.co/3Y4mRmM/7.png" />
+                            <h1>Green</h1>
+                            <h2>@userrr.Green</h2>
+                            break;
+                        case 8:
+                            <img src="https://i.ibb.co/MS9F7q6/8.png" />
+                            <h1>White</h1>
+                            <h2>@userrr.White</h2>
+                            break;
+                        case 9:
+                            <img src="https://i.ibb.co/dkGpDzW/9.png" />
+                            <h1>Watermelon</h1>
+                            <h2>@userrr.Watermelon</h2>
+                            break;
+                        case 10:
+                            <img src="https://i.ibb.co/6bXytJq/10.png" />
+                            <h1>Orange</h1>
+                            <h2>@userrr.Orange</h2>
+                            break;
+                        case 11:
+                            <img src="https://i.ibb.co/fppZL2P/11.png" />
+                            <h1>Mango</h1>
+                            <h2>@userrr.NormalMango</h2>
+                            break;
+                        case 12:
+                            <img src="https://i.ibb.co/6yvpYQK/12.png" />
+                            <h1>Pink</h1>
+                            <h2>@userrr.Pink</h2>
+                            break;
+                        case 13:
+                            <img src="https://i.ibb.co/bbFKLby/13.png" />
+                            <h1>Pacific Punch</h1>
+                            <h2>@userrr.PacificPunch</h2>
+                            break;
+                        case 14:
+                            <img src="https://i.ibb.co/mF4Vp8b/14.png" />
+                            <h1>Khaotic</h1>
+                            <h2>@userrr.Khaotic</h2>
+                            break;
+                        case 15:
+                            <img src="https://i.ibb.co/ccp4Y74/15.png" />
+                            <h1>Java</h1>
+                            <h2>@userrr.Java</h2>
+                            break;
+                        case 16:
+                            <img src="https://i.ibb.co/qMXDP7C/16.png" />
+                            <h1>Kubalibre</h1>
+                            <h2>@userrr.JapanStrawberry</h2>
+                            break;
+                        case 17:
+                            <img src="https://i.ibb.co/D1KQNf4/17.png" />
+                            <h1>Molet</h1>
+                            <h2>@userrr.Molet</h2>
+                            break;
+                        case 18:
+                            <img src="https://i.ibb.co/QntQHwb/18.png" />
+                            <h1>Assault</h1>
+                            <h2>@userrr.Assault</h2>
+                            break;
+                        case 19:
+                            <img src="https://i.ibb.co/Lx9tf6L/19.png" />
+                            <h1>Mixxd</h1>
+                            <h2>@userrr.Mixxd</h2>
+                            break;
+                        case 20:
+                            <img src="https://i.ibb.co/nbncLw7/20.png" />
+                            <h1>Red Hamilton</h1>
+                            <h2>@userrr.RedHamilton</h2>
+                            break;
+                        case 21:
+                            <img src="https://i.ibb.co/YQ28fg3/21.png" />
+                            <h1>Pinapple</h1>
+                            <h2>@userrr.Pinapple</h2>
+                            break;
+                    }
+                 }
+            </div>
+        }
+    }
+</div>
