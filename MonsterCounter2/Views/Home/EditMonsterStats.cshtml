@@ -1,0 +1,130 @@
+﻿@model EditModelView
+
+@{
+    ViewData["Tittle"] = "Editing Stats";
+}
+
+<div id="conta">
+    <form>
+    @{
+        for (int i = 0; i < 21; i++)
+        {
+            <div id="monst">
+                @{
+                    switch (i)
+                    {
+                        case 1:
+                            <img src="https://i.ibb.co/LkwrzxP/1.png" />
+                            <h1>Classic Green</h1>
+                            <input asp-for="NormalGreen" class="form-control" type="text" value="Model.NormalGreen" />
+                            break;
+                        case 2:
+                            <img src="https://i.ibb.co/548tFMH/2.png" />
+                            <h1>Blue</h1>
+                            <input asp-for="NormalBlue" class="form-control" type="text" value="Model.NormalBlue" />
+                            break;
+                        case 3:
+                            <img src="https://i.ibb.co/cTztGZN/3.png" />
+                            <h1>The Doctor</h1>
+                            <input asp-for="TheDoctor" class="form-control" type="text" value="Model.TheDoctor" />
+                            break;
+                        case 4:
+                            <img src="https://i.ibb.co/THhgvbK/4.png" />
+                            <h1>Blue Hamilton</h1>
+                            <input asp-for="BlueHamilton" class="form-control" type="text" value="Model.BlueHamilton" />
+                            break;
+                        case 5:
+                            <img src="https://i.ibb.co/Tc6XP9X/5.png" />
+                            <h1>No Sugar Green</h1>
+                            <input asp-for="NoSugarGreen" class="form-control" type="text" value="Model.NoSugarGreen" />
+                            break;
+                        case 6:
+                            <img src="https://i.ibb.co/BntqY7V/6.png" />
+                            <h1>No Sugar Mango</h1>
+                            <input asp-for="NoSugarMango" class="form-control" type="text" value="Model.NoSugarMango" />
+                            break;
+                        case 7:
+                            <img src="https://i.ibb.co/3Y4mRmM/7.png" />
+                            <h1>Green</h1>
+                            <input asp-for="Green" class="form-control" type="text" value="Model.Green" />
+                            break;
+                        case 8:
+                            <img src="https://i.ibb.co/MS9F7q6/8.png" />
+                            <h1>White</h1>
+                            <input asp-for="White" class="form-control" type="text" value="Model.White" />
+                            break;
+                        case 9:
+                            <img src="https://i.ibb.co/dkGpDzW/9.png" />
+                            <h1>Watermelon</h1>
+                            <input asp-for="Watermelon" class="form-control" type="text" value="Model.Watermelon" />
+                            break;
+                        case 10:
+                            <img src="https://i.ibb.co/6bXytJq/10.png" />
+                            <h1>Orange</h1>
+                            <input asp-for="Orange" class="form-control" type="text" value="Model.Orange" />
+                            break;
+                        case 11:
+                            <img src="https://i.ibb.co/fppZL2P/11.png" />
+                            <h1>Mango</h1>
+                            <input asp-for="NormalMango" class="form-control" type="text" value="Model.NormalMango" />
+                            break;
+                        case 12:
+                            <img src="https://i.ibb.co/6yvpYQK/12.png" />
+                            <h1>Pink</h1>
+                            <input asp-for="Pink" class="form-control" type="text" value="Model.Pink" />
+                            break;
+                        case 13:
+                            <img src="https://i.ibb.co/bbFKLby/13.png" />
+                            <h1>Pacific Punch</h1>
+                            <input asp-for="PacificPunch" class="form-control" type="text" value="Model.PacificPunch" />
+                            break;
+                        case 14:
+                            <img src="https://i.ibb.co/mF4Vp8b/14.png" />
+                            <h1>Khaotic</h1>
+                            <input asp-for="Khaotic" class="form-control" type="text" value="Model.Khaotic" />
+                            break;
+                        case 15:
+                            <img src="https://i.ibb.co/ccp4Y74/15.png" />
+                            <h1>Java</h1>
+                            <input asp-for="Java" class="form-control" type="text" value="Model.Java" />
+                            break;
+                        case 16:
+                            <img src="https://i.ibb.co/qMXDP7C/16.png" />
+                            <h1>Kubalibre</h1>
+                            <input asp-for="JapanStrawberry" class="form-control" type="text" value="Model.JapanStrawberry" />
+                            break;
+                        case 17:
+                            <img src="https://i.ibb.co/D1KQNf4/17.png" />
+                            <h1>Molet</h1>
+                            <input asp-for="Molet" class="form-control" type="text" value="Model.Molet" />
+                            break;
+                        case 18:
+                            <img src="https://i.ibb.co/QntQHwb/18.png" />
+                            <h1>Assault</h1>
+                            <input asp-for="Assault" class="form-control" type="text" value="Model.Assault" />
+                            break;
+                        case 19:
+                            <img src="https://i.ibb.co/Lx9tf6L/19.png" />
+                            <h1>Mixxd</h1>
+                            <input asp-for="Mixxd" class="form-control" type="text" value="Model.Mixxd" />
+                            break;
+                        case 20:
+                            <img src="https://i.ibb.co/nbncLw7/20.png" />
+                            <h1>Red Hamilton</h1>
+                            <input asp-for="RedHamilton" class="form-control" type="text" value="Model.RedHamilton" />
+                            break;
+                        case 21:
+                            <img src="https://i.ibb.co/YQ28fg3/21.png" />
+                            <h1>Pinapple</h1>
+                            <input asp-for="Pinapple" class="form-control" type="text" value="Model.Pinapple" />
+                            break;
+                    }
+                }
+            </div>
+        }
+    }
+        <div class="text-center">
+            <input class="btn btn-primary mt-3" type="submit" value="Save" />
+        </div>
+    </form>
+</div>

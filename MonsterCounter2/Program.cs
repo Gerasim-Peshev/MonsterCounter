@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MonsterCounter2.Data;
 using MonsterCounter2.Data.Models;
+using MonsterCounter2.Services.Contract;
+using MonsterCounter2.Services.MonsterFans;
 
 namespace MonsterCounter2
 {
@@ -49,6 +51,10 @@ namespace MonsterCounter2
                 {
                     options.Filters.Add<AutoValidateAntiforgeryTokenAttribute>();
                 });
+
+            builder
+               .Services
+               .AddScoped<IMonsterFanService, MonsterFanService>();
 
             var app = builder.Build();
 
